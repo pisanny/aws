@@ -23,14 +23,17 @@ public_ip=associate-public-ip-address
     --private-ip-address "$private_ip_address" \
     --tag-specifications "$tags" \
     --${public_ip}
-
-
-  :
+  # --security-groups "$security_group" \
 }
 
 stop()
 {
-  :
+  ids=($(
+    aws ec2 describe-instances \
+    --query 'Reservations[*].Instances[?KeyName==`'$key_name'`].InstanceId' \
+    --output text
+  ))
+  aws ec2 terminate-instances --instance-ids "${ids[@]}"
 }
 
 if [ "$1" = start ]; then
