@@ -38,10 +38,20 @@ get_dns_name()
   | jq -r '.Reservations[].Instances[].NetworkInterfaces[0].Association.PublicDnsName' 
 }
 
+initial_command()
+{
+  cat <<EOF
+#!/bin/sh
+
+curl https://raw.githubusercontent.com/pisanny/aws/master/scripts/install-qrencode.sh | bash -s
+EOF
+
+}
+
 start()
 {
   start_log=$(
-    start_vm 10.2.1.51 associate-public-ip-address ${USER_NAME}-vm1 file://${PWD}/scripts/initial-qrencode.sh
+  start_vm 10.2.1.51 associate-public-ip-address ${USER_NAME}-vm1 file://<( initial_command )
   )
   instance_id=$(echo "${start_log}" | jq -r .Instances[0].InstanceId)
  
