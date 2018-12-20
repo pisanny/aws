@@ -1,0 +1,511 @@
+{
+    "Instances": [
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-12-20T07:53:18.000Z", 
+            "PrivateIpAddress": "10.2.1.51", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-04540e242cdfb35de", 
+            "CpuOptions": {
+                "CoreCount": 1, 
+                "ThreadsPerCore": 1
+            }, 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-0734df8830b7d0dd9", 
+            "ImageId": "ami-09693313102a30b2c", 
+            "PrivateDnsName": "ip-10-2-1-51.eu-west-1.compute.internal", 
+            "KeyName": "user5", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "default", 
+                    "GroupId": "sg-0eddf9e00104cd1b4"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-0d00d8b5d01e66e35", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:8e:37:24:6a:3e", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-04540e242cdfb35de", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-02533c4c341e4c5cd", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-10-2-1-51.eu-west-1.compute.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "10.2.1.51"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-10-2-1-51.eu-west-1.compute.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-09ad10fe49518f5fa", 
+                        "AttachTime": "2018-12-20T07:53:18.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0eddf9e00104cd1b4"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "886677986286", 
+                    "SubnetId": "subnet-0d00d8b5d01e66e35", 
+                    "PrivateIpAddress": "10.2.1.51"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "eu-west-1a"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "Tags": [
+                {
+                    "Value": "user5-vm1", 
+                    "Key": "installation_id"
+                }, 
+                {
+                    "Value": "user5-vm1", 
+                    "Key": "Name"
+                }
+            ], 
+            "AmiLaunchIndex": 0
+        }
+    ], 
+    "ReservationId": "r-07b68688e7bc0b968", 
+    "Groups": [], 
+    "OwnerId": "886677986286"
+}
+{
+    "Instances": [
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-12-20T07:53:21.000Z", 
+            "PrivateIpAddress": "10.2.1.52", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-04540e242cdfb35de", 
+            "CpuOptions": {
+                "CoreCount": 1, 
+                "ThreadsPerCore": 1
+            }, 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-00e1255fc9ea8b4e4", 
+            "ImageId": "ami-09693313102a30b2c", 
+            "PrivateDnsName": "ip-10-2-1-52.eu-west-1.compute.internal", 
+            "KeyName": "user5", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "default", 
+                    "GroupId": "sg-0eddf9e00104cd1b4"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-0d00d8b5d01e66e35", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:a3:e9:68:c3:20", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-04540e242cdfb35de", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-0a8ce0eac392e815f", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-10-2-1-52.eu-west-1.compute.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "10.2.1.52"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-10-2-1-52.eu-west-1.compute.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-0d66a6dd04c70ad64", 
+                        "AttachTime": "2018-12-20T07:53:21.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0eddf9e00104cd1b4"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "886677986286", 
+                    "SubnetId": "subnet-0d00d8b5d01e66e35", 
+                    "PrivateIpAddress": "10.2.1.52"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "eu-west-1a"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "Tags": [
+                {
+                    "Value": "user5-vm1", 
+                    "Key": "installation_id"
+                }, 
+                {
+                    "Value": "user5-vm2", 
+                    "Key": "Name"
+                }
+            ], 
+            "AmiLaunchIndex": 0
+        }
+    ], 
+    "ReservationId": "r-0dd5eecdd47d155b6", 
+    "Groups": [], 
+    "OwnerId": "886677986286"
+}
+{
+    "Instances": [
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-12-20T07:53:23.000Z", 
+            "PrivateIpAddress": "10.2.1.53", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-04540e242cdfb35de", 
+            "CpuOptions": {
+                "CoreCount": 1, 
+                "ThreadsPerCore": 1
+            }, 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-0fa1d3110a70c3f00", 
+            "ImageId": "ami-09693313102a30b2c", 
+            "PrivateDnsName": "ip-10-2-1-53.eu-west-1.compute.internal", 
+            "KeyName": "user5", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "default", 
+                    "GroupId": "sg-0eddf9e00104cd1b4"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-0d00d8b5d01e66e35", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:e5:78:dc:d0:b6", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-04540e242cdfb35de", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-047164847f61f9872", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-10-2-1-53.eu-west-1.compute.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "10.2.1.53"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-10-2-1-53.eu-west-1.compute.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-0d736676ee9da38f7", 
+                        "AttachTime": "2018-12-20T07:53:23.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0eddf9e00104cd1b4"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "886677986286", 
+                    "SubnetId": "subnet-0d00d8b5d01e66e35", 
+                    "PrivateIpAddress": "10.2.1.53"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "eu-west-1a"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "Tags": [
+                {
+                    "Value": "user5-vm3", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "user5-vm1", 
+                    "Key": "installation_id"
+                }
+            ], 
+            "AmiLaunchIndex": 0
+        }
+    ], 
+    "ReservationId": "r-000b22e5ccb08463a", 
+    "Groups": [], 
+    "OwnerId": "886677986286"
+}
+{
+    "Instances": [
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-12-20T07:53:26.000Z", 
+            "PrivateIpAddress": "10.2.1.54", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-04540e242cdfb35de", 
+            "CpuOptions": {
+                "CoreCount": 1, 
+                "ThreadsPerCore": 1
+            }, 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-0d12d367268839c9e", 
+            "ImageId": "ami-09693313102a30b2c", 
+            "PrivateDnsName": "ip-10-2-1-54.eu-west-1.compute.internal", 
+            "KeyName": "user5", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "default", 
+                    "GroupId": "sg-0eddf9e00104cd1b4"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-0d00d8b5d01e66e35", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:11:a5:15:af:b6", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-04540e242cdfb35de", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-0bfd14470c72c1de2", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-10-2-1-54.eu-west-1.compute.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "10.2.1.54"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-10-2-1-54.eu-west-1.compute.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-04e09d064c35362ae", 
+                        "AttachTime": "2018-12-20T07:53:26.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0eddf9e00104cd1b4"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "886677986286", 
+                    "SubnetId": "subnet-0d00d8b5d01e66e35", 
+                    "PrivateIpAddress": "10.2.1.54"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "eu-west-1a"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "Tags": [
+                {
+                    "Value": "user5-vm4", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "user5-vm1", 
+                    "Key": "installation_id"
+                }
+            ], 
+            "AmiLaunchIndex": 0
+        }
+    ], 
+    "ReservationId": "r-04ccfd699248155ec", 
+    "Groups": [], 
+    "OwnerId": "886677986286"
+}
+{
+    "Instances": [
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-12-20T07:53:28.000Z", 
+            "PrivateIpAddress": "10.2.1.55", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-04540e242cdfb35de", 
+            "CpuOptions": {
+                "CoreCount": 1, 
+                "ThreadsPerCore": 1
+            }, 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-004415960073b29d1", 
+            "ImageId": "ami-09693313102a30b2c", 
+            "PrivateDnsName": "ip-10-2-1-55.eu-west-1.compute.internal", 
+            "KeyName": "user5", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "default", 
+                    "GroupId": "sg-0eddf9e00104cd1b4"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-0d00d8b5d01e66e35", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:8b:9c:01:85:80", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-04540e242cdfb35de", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-02be546a11464ffcf", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-10-2-1-55.eu-west-1.compute.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "10.2.1.55"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-10-2-1-55.eu-west-1.compute.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-0bcf15311ad4d0210", 
+                        "AttachTime": "2018-12-20T07:53:28.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0eddf9e00104cd1b4"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "886677986286", 
+                    "SubnetId": "subnet-0d00d8b5d01e66e35", 
+                    "PrivateIpAddress": "10.2.1.55"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "eu-west-1a"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "Tags": [
+                {
+                    "Value": "user5-vm5", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "user5-vm1", 
+                    "Key": "installation_id"
+                }
+            ], 
+            "AmiLaunchIndex": 0
+        }
+    ], 
+    "ReservationId": "r-0f684f365bcc754e5", 
+    "Groups": [], 
+    "OwnerId": "886677986286"
+}
+
