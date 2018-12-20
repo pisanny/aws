@@ -1,29 +1,39 @@
 #!/bin/bash
 
-image_id=ami-09693313102a30b2c
-instance_type=t2.micro
-vpc_id=vpc-04540e242cdfb35de
-key_name=user5
-security_group=...
-subnet_id=subnet-0d00d8b5d01e66e35
-shutdown_type=stop
-tags="ResourceType=instance,Tags=[{Key=installation_id,Value=user5-1},{Key=Name,Value=user5-vm1}]"
+IMAGE_ID=ami-09693313102a30b2c
+INSTANCE_TYPE=t2.micro
+VPC_ID=vpc-04540e242cdfb35de
+KEY_NAME=user5
+USER_NAME=user5
+SUBNET_ID=subnet-0d00d8b5d01e66e35
+SHUTDOWN_TYPE=stop
+TAGS="ResourceType=instance,Tags=[{Key=installation_id,Value=${USER_NAME}-vm1},{Key=Name,Value=NAME}]"
 
-start()
+start_vm()
 {
-private_ip_address="10.2.1.51"
-public_ip=associate-public-ip-address
+  local private_ip_address="$1"
+  local public_ip="$2"
+  local name="$3"
+
+  local tags=$(echo $TAGS | sed s/NAME/$name/)
 
   aws ec2 run-instances \
-    --image-id "$image_id" \
-    --instance-type "$instance_type" \
-    --key-name "$key_name" \
-    --subnet-id "$subnet_id" \
-    --instance-initiated-shutdown-behavior "$shutdown_type" \
+    --image-id "$IMAGE_ID" \
+    --instance-type "$INSTANCE_TYPE" \
+    --key-name "$KEY_NAME" \
+    --subnet-id "$SUBNET_ID" \
+    --instance-initiated-shutdown-behavior "$SHUTDOWN_TYPE" \
     --private-ip-address "$private_ip_address" \
     --tag-specifications "$tags" \
     --${public_ip}
-  # --security-groups "$security_group" \
+}
+
+start()
+{
+  start_vm 10.2.1.51 associate-public-ip-address ${USER_NAME}-vm1
+  for i in {2..5}; do
+    start_vm 10.2.1.$((50+i)) no-associate-public-ip-address ${USER_NAME}-vm$i
+  done
 }
 
 stop()
