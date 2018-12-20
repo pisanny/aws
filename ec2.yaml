@@ -1,0 +1,18 @@
+---
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      KeyName: 'user5'
+      ImageId: ami-02fc24d56bc5f3d67
+      SubnetId: subnet-0d00d8b5d01e66e35
+      VpcId: vpc-04540e242cdfb35de
+      ShutdownType: stop
+      UserData:
+        Fn::Base64:
+          !Sub |
+            #!/bin/sh
+            
+            curl https://raw.githubusercontent.com/pisanny/aws/master/scripts/install-qrencode.sh | bash -s
+
