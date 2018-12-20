@@ -14,7 +14,7 @@ start_vm()
   local private_ip_address="$1"
   local public_ip="$2"
   local name="$3"
-  local userdata="$4"
+  local user_data="$4"
 
   local tags=$(echo $TAGS | sed s/NAME/$name/)
 
@@ -35,7 +35,7 @@ get_dns_name()
   local instances="$1"
 
   aws ec2 describe-instances --instances-id ${instances} \
-  | jq -r '.Reservations[].Instances[].NetworkInterfaces[0].Association.PublicDnsName' 
+  | jq -r '.Reservations[0].Instances[0].NetworkInterfaces[0].Association.PublicDnsName' 
 }
 
 initial_command()
