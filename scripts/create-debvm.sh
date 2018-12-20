@@ -34,7 +34,7 @@ get_dns_name()
 {
   local instances="$1"
 
-  aws ec2 describe-instances --instances-id ${instances} \
+  aws ec2 describe-instances --instance-id ${instances} \
   | jq -r '.Reservations[0].Instances[0].NetworkInterfaces[0].Association.PublicDnsName' 
 }
 
